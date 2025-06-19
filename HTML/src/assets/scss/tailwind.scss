@@ -1,0 +1,25 @@
+/* Template Name: Flowvico - Tailwind CSS Personal & Minimal Portfolio Template
+   Author: Flowdev Teams
+   Email: support@Flowdev Teams.in
+   Website: https://Flowdev Teams.in
+   Version: 1.0
+   Created: September 2023
+   File: Main Css File
+*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// FONTS
+@import "custom/fonts";
+
+// general
+@import "custom/general";
+
+// structure
+@import "custom/structure/topnav";
+
+// pages
+@import "custom/pages/helper";
+@import "custom/pages/contact";

@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="en" class="light scroll-smooth" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Flowvico - Tailwind CSS Personal & Minimal Portfolio Template</title>
+        <meta name="description" content="Tailwind CSS Personal & Minimal Portfolio Template">
+        <meta name="keywords" content="AI, Copywriting, Tailwind, Responsive, Artificial Intelligence, Robot, Robot AI">
+        <meta name="author" content="Flowdev Teams">
+        <meta name="website" content="https://Flowdev Teams.in">
+        <meta name="email" content="support@Flowdev Teams.in">
+        <meta name="version" content="1.0">
+        <!-- favicon -->
+        <link href="assets/images/favicon.ico" rel="shortcut icon">
+
+        <!-- Css -->
+        <link href="assets/libs/tobii/css/tobii.min.css" rel="stylesheet">
+        <!-- Main Css -->
+        <link href="assets/libs/@mdi/font/css/materialdesignicons.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="assets/css/tailwind.css">
+
+    </head>
+    
+    <body class="font-poppins text-[15px] text-slate-900 dark:text-white dark:bg-slate-900">
+        <!-- Loader Start -->
+        <!-- <div id="preloader">
+            <div id="status">
+                <div class="logo">
+                    <img src="assets/images/logo-icon-64.png" class="d-block mx-auto animate-[spin_10s_linear_infinite]" alt="">
+                </div>
+                <div class="justify-content-center">
+                    <div class="text-center">
+                        <h4 class="mb-0 mt-2 text-lg font-semibold">Flowvico</h4>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Loader End -->
+        
+        <!-- Start Navbar -->
+        <nav id="topnav" class="defaultscroll is-sticky">
+            <div class="container relative">
+                <!-- Logo container-->
+                <a class="logo" href="index.html">
+                   <h2 class=" font-semibold md:text-3xl text-lg lg:mt-0  mt-5">Flow<span class="text-orange-500">Vico</span></h2>
+                </a>
+                <!-- End Logo container-->
+
+                <!-- Start Mobile Toggle -->
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                            <div class="lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- End Mobile Toggle -->
+
+                <!--Login button Start-->
+                <ul class="buy-button list-none mb-0">
+                    <li class="inline mb-0">
+                        <a href="" class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-[15px] text-center rounded-xl bg-orange-500 hover:bg-orange-600 border border-orange-500 hover:border-orange-600 text-white"><i data-feather="dribbble" class="h-[14px] w-[14px] align-middle" title="dribbble"></i></a>
+                    </li>
+                    <li class="inline mb-0">
+                        <a href="" class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-[15px] text-center rounded-xl bg-orange-500 hover:bg-orange-600 border border-orange-500 hover:border-orange-600 text-white"><i data-feather="linkedin" class="h-[14px] w-[14px] align-middle" title="dribbble"></i></a>
+                    </li>
+                    <li class="inline mb-0">
+                        <a href="" class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-[15px] text-center rounded-xl bg-orange-500 hover:bg-orange-600 border border-orange-500 hover:border-orange-600 text-white"><i data-feather="github" class="h-[14px] w-[14px] align-middle" title="dribbble"></i></a>
+                    </li>
+                </ul>
+                <!--Login button End-->
+
+                <div id="navigation">
+                    <!-- Navigation Menu-->   
+                    <ul class="navigation-menu justify-end">
+                        <li class="has-submenu parent-menu-item">
+                            <a href="javascript:void(0)">Home</a><span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li><a href="index.html" class="sub-menu-item">Hero One</a></li>
+                                <li><a href="index-two.html" class="sub-menu-item">Hero Two</a></li>
+                                <li><a href="index-three.html" class="sub-menu-item">Hero Three</a></li>
+                            </ul>
+                        </li>
+                
+                        <li><a href="aboutus.html" class="sub-menu-item">About Us</a></li>
+
+                        <li><a href="services.html" class="sub-menu-item">Services </a></li>
+                
+                        <li class="has-submenu parent-parent-menu-item">
+                            <a href="javascript:void(0)">Portfolio</a><span class="menu-arrow"></span>
+                            <ul class="submenu megamenu">
+                                <li>
+                                    <ul>
+                                        <li class="megamenu-head">Modern Portfolio</li>
+                                        <li><a href="portfolio-modern-two.html" class="sub-menu-item">Two Column</a></li>
+                                        <li><a href="portfolio-modern-three.html" class="sub-menu-item">Three Column</a></li>
+                                        <li><a href="portfolio-modern-four.html" class="sub-menu-item">Four Column</a></li>
+                                        <li><a href="portfolio-modern-five.html" class="sub-menu-item">Five Column</a></li>
+                                        <li><a href="portfolio-modern-six.html" class="sub-menu-item">Six Column</a></li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <ul>
+                                        <li class="megamenu-head">Classic Portfolio</li>
+                                        <li><a href="portfolio-classic-two.html" class="sub-menu-item">Two Column</a></li>
+                                        <li><a href="portfolio-classic-three.html" class="sub-menu-item">Three Column</a></li>
+                                        <li><a href="portfolio-classic-four.html" class="sub-menu-item">Four Column</a></li>
+                                        <li><a href="portfolio-classic-five.html" class="sub-menu-item">Five Column</a></li>
+                                        <li><a href="portfolio-classic-six.html" class="sub-menu-item">Six Column</a></li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <ul>
+                                        <li class="megamenu-head">Creative Portfolio</li>
+                                        <li><a href="portfolio-creative-two.html" class="sub-menu-item">Two Column</a></li>
+                                        <li><a href="portfolio-creative-three.html" class="sub-menu-item">Three Column</a></li>
+                                        <li><a href="portfolio-creative-four.html" class="sub-menu-item">Four Column</a></li>
+                                        <li><a href="portfolio-creative-five.html" class="sub-menu-item">Five Column</a></li>
+                                        <li><a href="portfolio-creative-six.html" class="sub-menu-item">Six Column</a></li>
+                                    </ul>
+                                </li>
+                
+                                <li>
+                                    <ul>
+                                        <li class="megamenu-head">Masonry Portfolio</li>
+                                        <li><a href="portfolio-masonry-two.html" class="sub-menu-item">Two Column</a></li>
+                                        <li><a href="portfolio-masonry-three.html" class="sub-menu-item">Three Column</a></li>
+                                        <li><a href="portfolio-masonry-four.html" class="sub-menu-item">Four Column</a></li>
+                                        <li><a href="portfolio-masonry-five.html" class="sub-menu-item">Five Column</a></li>
+                                        <li><a href="portfolio-masonry-six.html" class="sub-menu-item">Six Column</a></li>
+                                    </ul>
+                                </li>
+                
+                                <li>
+                                    <ul>
+                                        <li class="megamenu-head">Portfolio Detail</li>
+                                        <li><a href="portfolio-detail-one.html" class="sub-menu-item">Portfolio One</a></li>
+                                        <li><a href="portfolio-detail-two.html" class="sub-menu-item">Portfolio Two</a></li>
+                                        <li><a href="portfolio-detail-three.html" class="sub-menu-item">Portfolio Three</a></li>
+                                        <li><a href="portfolio-detail-four.html" class="sub-menu-item">Portfolio Four</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="has-submenu parent-menu-item">
+                            <a href="javascript:void(0)">Blog</a><span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li><a href="blogs.html" class="sub-menu-item">Blogs</a></li>
+                                <li><a href="blog-detail.html" class="sub-menu-item">Blog Detail</a></li>
+                            </ul>
+                        </li>
+                
+                        <li><a href="contactus.html" class="sub-menu-item">Contact Us</a></li>
+                    </ul><!--end navigation menu-->
+                </div><!--end navigation-->
+            </div><!--end container-->
+        </nav><!--end header-->
+        <!-- End Navbar -->
+
+        <!-- Start Hero -->
+        <section class="relative overflow-hidden md:flex md:h-screen py-36 items-center bg-gray-50 dark:bg-slate-800">
+            <div class="container relative">
+                <div class="grid md:grid-cols-2 grid-cols-1 items-center gap-6">
+                    <div class="">
+                        <h5 class="font-semibold leading-normal text-[20px] mt-6">Hi, I'm <span class="typewrite" data-period="2000" data-type='[ "Calvin Carlo", "Freelancer", "Website Designer", "Web Developer", "UI/UX Designer" ]'> <span class="wrap"></span> </span></h5>
+                    
+                        <h5 class="md:text-5xl md:leading-normal text-3xl leading-normal font-bold mt-3">A Full Service <br> Digital Agency</h5>
+
+                        <p class="text-slate-400 dark:text-white/60 text-[17px] max-w-xl mt-4">Flowvico is a Creative Agency & Startup Studio that provides Digital Products and Services turns to focus on client success.</p>
+
+                        <div class="relative mt-6">
+                            <a href="aboutus.html" class="py-2 px-5 inline-flex items-center font-medium tracking-wide border align-middle duration-500 text-[15px] text-center bg-orange-500 hover:bg-orange-600 border-orange-500 hover:border-orange-600 text-white rounded-xl">Explore Work <i class="mdi mdi-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="relative lg:ms-6 before:content-[''] before:absolute before:start-1/2 before:-translate-x-1/2 rtl:before:translate-x-1/2 before:bottom-1/2 before:translate-y-1/2 before:w-[48rem] before:h-[20rem] before:rounded-[18rem] ltr:before:rotate-[135deg] rtl:before:rotate-[45deg] before:bg-orange-500 dark:before:bg-orange-500">
+                        <div class="relative z-1">
+                            <img src="assets/images/hero.png" alt="">
+
+                            <div class="absolute lg:bottom-20 -bottom-5 md:-start-10 -start-2 p-4 rounded-lg shadow-md dark:shadow-gray-800 bg-white dark:bg-slate-900 m-3 w-44 text-center">
+                                <span class="text-3xl font-medium mb-0"><span class="counter-value font-bold" data-target="125">1</span>+</span>
+                                <h6 class="text-sm text-slate-400 mt-1">Project Completed</h6>
+                            </div>
+
+                            <div class="absolute md:top-20 top-32 md:-end-10 -end-2 p-4 rounded-lg shadow-md dark:shadow-gray-800 bg-white dark:bg-slate-900 m-3 w-44 text-center">
+                                <h6 class="font-semibold">Web Designer</h6>
+                                <h6 class="text-sm text-slate-400 mt-1">7+ Years Experience</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--end grid-->
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- End Hero -->
+
+        <!-- Start -->
+        <section class="relative overflow-hidden md:py-24 py-16">
+            <div class="container relative md:pb-24 pb-16">
+                <div class="grid md:grid-cols-12 grid-cols-1 items-center gap-6">
+                    <div class="lg:col-span-5 md:col-span-6">
+                        <div class="relative">
+                            <div class="relative flex justify-end">
+                                <img src="assets/images/about.jpg" class="lg:w-[400px] w-[280px] rounded-xl shadow dark:shadow-gray-700" alt="">
+                                <div class="absolute top-0 translate-y-2/4 start-0 text-center">
+                                    <a href="#!" data-type="youtube" data-id="S_CGed6E610" class="lightbox h-20 w-20 rounded-full shadow-lg shadow-slate-100 dark:shadow-slate-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-orange-600">
+                                        <i class="mdi mdi-play inline-flex items-center justify-center text-2xl"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="absolute md:-start-5 start-0 -bottom-16">
+                                <img src="assets/images/about2.jpg" class="lg:w-[280px] w-[200px] border-8 border-white dark:border-slate-900 rounded-xl" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-7 md:col-span-6">
+                        <div class="lg:ms-5">
+                            <h6 class="text-orange-500 text-sm font-medium uppercase mb-2">About us</h6>
+                            <h3 class="mb-4 md:text-2xl text-xl font-medium">Better Design <br> Better Experience</h3>
+
+                            <p class="text-slate-400 dark:text-white/60 max-w-xl">Obviously I'm a Web Designer. Experienced with all stages of the development cycle for dynamic web projects.</p>
+
+                            <div class="mt-4">
+                                <div class="flex justify-between mb-2">
+                                    <span class="text-slate-400 dark:text-white/60">WordPress</span>
+                                    <span class="text-slate-400 dark:text-white/60">84%</span>
+                                </div>
+                                <div class="w-full bg-gray-100 dark:bg-gray-800 rounded-full h-[6px]">
+                                    <div class="bg-orange-500 h-[6px] rounded-full" style="width: 84%"></div>
+                                </div>
+                            </div>
+
+                            <div class="mt-4">
+                                <div class="flex justify-between mb-2">
+                                    <span class="text-slate-400 dark:text-white/60">JavaScript</span>
+                                    <span class="text-slate-400 dark:text-white/60">79%</span>
+                                </div>
+                                <div class="w-full bg-gray-100 dark:bg-gray-800 rounded-full h-[6px]">
+                                    <div class="bg-orange-500 h-[6px] rounded-full" style="width: 79%"></div>
+                                </div>
+                            </div>
+
+                            <div class="mt-4">
+                                <div class="flex justify-between mb-2">
+                                    <span class="text-slate-400 dark:text-white/60">HTML</span>
+                                    <span class="text-slate-400 dark:text-white/60">95%</span>
+                                </div>
+                                <div class="w-full bg-gray-100 dark:bg-gray-800 rounded-full h-[6px]">
+                                    <div class="bg-orange-500 h-[6px] rounded-full" style="width: 95%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--grid-->
+            </div><!--end container-->
+
+            <div class="container relative md:mt-24 mt-16">
+                <div class="grid grid-cols-1 pb-6 text-center">
+                    <h3 class="mb-6 md:text-2xl text-xl font-medium">What we do?</h3>
+
+                    <p class="text-slate-400 dark:text-white/60 max-w-xl mx-auto">This is just a simple text made for this unique and awesome template, you can replace it with any text.</p>
+                </div><!--end grid-->
+
+                <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-6 gap-6">
+                    <!-- Content -->
+                    <div class="group relative lg:px-6 transition duration-500 ease-in-out rounded-xl overflow-hidden text-center">
+                        <div class="relative overflow-hidden text-transparent -m-3">
+                            <i data-feather="hexagon" class="h-28 w-28 fill-orange-500/5 mx-auto rotate-[30deg]"></i>
+                            <div class="absolute top-2/4 -translate-y-2/4 start-0 end-0 mx-auto text-orange-500 rounded-xl transition duration-500 ease-in-out text-3xl flex align-middle justify-center items-center">
+                                <img src="assets/images/icons/color-swatches.svg" class="h-8" alt="">
+                            </div>
+                        </div>
+
+                        <div class="mt-6">
+                            <a href="services.html" class="text-lg font-medium duration-500 hover:text-orange-500">Grow Your Business</a>
+                            <p class="text-slate-400 dark:text-white/60 text-[15px] duration-500 mt-3">If the distribution of letters and 'words' is random, the reader will not be distracted from making.</p>
+                        </div>
+                    </div>
+                    <!-- Content -->
+
+                    <!-- Content -->
+                    <div class="group relative lg:px-6 transition duration-500 ease-in-out rounded-xl overflow-hidden text-center">
+                        <div class="relative overflow-hidden text-transparent -m-3">
+                            <i data-feather="hexagon" class="h-28 w-28 fill-orange-500/5 mx-auto rotate-[30deg]"></i>
+                            <div class="absolute top-2/4 -translate-y-2/4 start-0 end-0 mx-auto text-orange-500 rounded-xl transition duration-500 ease-in-out text-3xl flex align-middle justify-center items-center">
+                                <img src="assets/images/icons/decent-work-and-economic-growth.svg" class="h-8" alt="">
+                            </div>
+                        </div>
+
+                        <div class="mt-6">
+                            <a href="services.html" class="text-lg font-medium duration-500 hover:text-orange-500">Drive More Sales</a>
+                            <p class="text-slate-400 dark:text-white/60 text-[15px] duration-500 mt-3">If the distribution of letters and 'words' is random, the reader will not be distracted from making.</p>
+                        </div>
+                    </div>
+                    <!-- Content -->
+
+                    <!-- Content -->
+                    <div class="group relative lg:px-6 transition duration-500 ease-in-out rounded-xl overflow-hidden text-center">
+                        <div class="relative overflow-hidden text-transparent -m-3">
+                            <i data-feather="hexagon" class="h-28 w-28 fill-orange-500/5 mx-auto rotate-[30deg]"></i>
+                            <div class="absolute top-2/4 -translate-y-2/4 start-0 end-0 mx-auto text-orange-500 rounded-xl transition duration-500 ease-in-out text-3xl flex align-middle justify-center items-center">
+                                <img src="assets/images/icons/flip-horizontal-arrow-1.svg" class="h-8" alt="">
+                            </div>
+                        </div>
+
+                        <div class="mt-6">
+                            <a href="services.html" class="text-lg font-medium duration-500 hover:text-orange-500">Handled By Expert</a>
+                            <p class="text-slate-400 dark:text-white/60 text-[15px] duration-500 mt-3">If the distribution of letters and 'words' is random, the reader will not be distracted from making.</p>
+                        </div>
+                    </div>
+                    <!-- Content -->
+                    
+                    <!-- Content -->
+                    <div class="group relative lg:px-6 transition duration-500 ease-in-out rounded-xl overflow-hidden text-center">
+                        <div class="relative overflow-hidden text-transparent -m-3">
+                            <i data-feather="hexagon" class="h-28 w-28 fill-orange-500/5 mx-auto rotate-[30deg]"></i>
+                            <div class="absolute top-2/4 -translate-y-2/4 start-0 end-0 mx-auto text-orange-500 rounded-xl transition duration-500 ease-in-out text-3xl flex align-middle justify-center items-center">
+                                <img src="assets/images/icons/layers-1.svg" class="h-8" alt="">
+                            </div>
+                        </div>
+
+                        <div class="mt-6">
+                            <a href="services.html" class="text-lg font-medium duration-500 hover:text-orange-500">Discussion For Idea</a>
+                            <p class="text-slate-400 dark:text-white/60 text-[15px] duration-500 mt-3">If the distribution of letters and 'words' is random, the reader will not be distracted from making.</p>
+                        </div>
+                    </div>
+                    <!-- Content -->
+
+                    <!-- Content -->
+                    <div class="group relative lg:px-6 transition duration-500 ease-in-out rounded-xl overflow-hidden text-center">
+                        <div class="relative overflow-hidden text-transparent -m-3">
+                            <i data-feather="hexagon" class="h-28 w-28 fill-orange-500/5 mx-auto rotate-[30deg]"></i>
+                            <div class="absolute top-2/4 -translate-y-2/4 start-0 end-0 mx-auto text-orange-500 rounded-xl transition duration-500 ease-in-out text-3xl flex align-middle justify-center items-center">
+                                <img src="assets/images/icons/pictures-folder-memories.svg" class="h-8" alt="">
+                            </div>
+                        </div>
+
+                        <div class="mt-6">
+                            <a href="services.html" class="text-lg font-medium duration-500 hover:text-orange-500">Increase Conversion</a>
+                            <p class="text-slate-400 dark:text-white/60 text-[15px] duration-500 mt-3">If the distribution of letters and 'words' is random, the reader will not be distracted from making.</p>
+                        </div>
+                    </div>
+                    <!-- Content -->
+
+                    <!-- Content -->
+                    <div class="group relative lg:px-6 transition duration-500 ease-in-out rounded-xl overflow-hidden text-center">
+                        <div class="relative overflow-hidden text-transparent -m-3">
+                            <i data-feather="hexagon" class="h-28 w-28 fill-orange-500/5 mx-auto rotate-[30deg]"></i>
+                            <div class="absolute top-2/4 -translate-y-2/4 start-0 end-0 mx-auto text-orange-500 rounded-xl transition duration-500 ease-in-out text-3xl flex align-middle justify-center items-center">
+                                <img src="assets/images/icons/production-belt-time.svg" class="h-8" alt="">
+                            </div>
+                        </div>
+
+                        <div class="mt-6">
+                            <a href="services.html" class="text-lg font-medium duration-500 hover:text-orange-500">Sales Growth Idea</a>
+                            <p class="text-slate-400 dark:text-white/60 text-[15px] duration-500 mt-3">If the distribution of letters and 'words' is random, the reader will not be distracted from making.</p>
+                        </div>
+                    </div>
+                    <!-- Content -->
+                </div><!--end grid-->
+            </div><!--end container-->
+
+            <div class="container relative md:mt-24 mt-16">
+                <div class="grid grid-cols-1 pb-6 text-center">
+                    <h3 class="mb-6 md:text-2xl text-xl font-medium">Our Projects</h3>
+
+                    <p class="text-slate-400 dark:text-white/60 max-w-xl mx-auto">This is just a simple text made for this unique and awesome template, you can replace it with any text.</p>
+                </div><!--end grid-->
+
+                <div class="grid grid-cols-1 items-center mt-6 gap-6">
+                    <div class="filters-group-wrap text-center">
+                        <div class="filters-group">
+                            <ul class="mb-0 list-none container-filter filter-options space-x-3">
+                                <li class="inline-block font-medium text-[15px] mb-3 text-slate-400 cursor-pointer relative duration-500 active" data-group="all">All</li>
+                                <li class="inline-block font-medium text-[15px] mb-3 text-slate-400 cursor-pointer relative duration-500" data-group="branding">Branding</li>
+                                <li class="inline-block font-medium text-[15px] mb-3 text-slate-400 cursor-pointer relative duration-500" data-group="designing">Designing</li>
+                                <li class="inline-block font-medium text-[15px] mb-3 text-slate-400 cursor-pointer relative duration-500" data-group="photography">Photography</li>
+                                <li class="inline-block font-medium text-[15px] mb-3 text-slate-400 cursor-pointer relative duration-500" data-group="development">Development</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><!--grid-->
+
+                <div id="grid" class="md:flex w-full justify-center mx-auto mt-4">
+                    <div class="lg:w-1/4 md:w-1/3 p-3 picture-item" data-groups='["branding"]'>
+                        <div class="group relative block rounded-xl duration-700 ease-in-out">
+                            <div class="relative overflow-hidden rounded-xl">
+                                <a href="assets/images/portfolio/1.jpg" class="lightbox" title="">
+                                    <img src="assets/images/portfolio/1.jpg" class="rounded-xl" alt="">
+                                </a>
+                            </div>
+                            <div class="content duration-700 ease-in-out">
+                                <div class="bg-white dark:bg-slate-900 p-4 rounded-xl absolute z-10 bottom-3 start-3 duration-700 ease-in-out scale-0 group-hover:scale-100">
+                                    <a href="portfolio-detail-three.html" class="h6 text-[15px] font-medium hover:text-orange-500 duration-500 ease-in-out">Mockup Collection</a>
+                                    <p class="text-slate-400 dark:text-white/60 mb-0">Abstract</p>
+                                </div>
+                            </div>
+
+                            <div class="absolute inset-0 bg-orange-500 rounded-xl group-hover:-mt-[10px] group-hover:-ms-[10px] h-[98%] w-[98%] duration-700 -z-1"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="lg:w-1/4 md:w-1/3 p-3 picture-item" data-groups='["designing"]'>
+                        <div class="group relative block rounded-xl duration-700 ease-in-out">
+                            <div class="relative overflow-hidden rounded-xl">
+                                <a href="assets/images/portfolio/2.jpg" class="lightbox" title="">
+                                    <img src="assets/images/portfolio/2.jpg" class="rounded-xl" alt="">
+                                </a>
+                            </div>
+                            <div class="content duration-700 ease-in-out">
+                                <div class="bg-white dark:bg-slate-900 p-4 rounded-xl absolute z-10 bottom-3 start-3 duration-700 ease-in-out scale-0 group-hover:scale-100">
+                                    <a href="portfolio-detail-three.html" class="h6 text-[15px] font-medium hover:text-orange-500 duration-500 ease-in-out">Mockup Collection</a>
+                                    <p class="text-slate-400 dark:text-white/60 mb-0">Abstract</p>
+                                </div>
+                            </div>
+
+                            <div class="absolute inset-0 bg-orange-500 rounded-xl group-hover:-mt-[10px] group-hover:-ms-[10px] h-[98%] w-[98%] duration-700 -z-1"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="lg:w-1/4 md:w-1/3 p-3 picture-item" data-groups='["photography"]'>
+                        <div class="group relative block rounded-xl duration-700 ease-in-out">
+                            <div class="relative overflow-hidden rounded-xl">
+                                <a href="assets/images/portfolio/3.jpg" class="lightbox" title="">
+                                    <img src="assets/images/portfolio/3.jpg" class="rounded-xl" alt="">
+                                </a>
+                            </div>
+                            <div class="content duration-700 ease-in-out">
+                                <div class="bg-white dark:bg-slate-900 p-4 rounded-xl absolute z-10 bottom-3 start-3 duration-700 ease-in-out scale-0 group-hover:scale-100">
+                                    <a href="portfolio-detail-three.html" class="h6 text-[15px] font-medium hover:text-orange-500 duration-500 ease-in-out">Mockup Collection</a>
+                                    <p class="text-slate-400 dark:text-white/60 mb-0">Abstract</p>
+                                </div>
+                            </div>
+
+                            <div class="absolute inset-0 bg-orange-500 rounded-xl group-hover:-mt-[10px] group-hover:-ms-[10px] h-[98%] w-[98%] duration-700 -z-1"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="lg:w-1/4 md:w-1/3 p-3 picture-item" data-groups='["development"]'>
+                        <div class="group relative block rounded-xl duration-700 ease-in-out">
+                            <div class="relative overflow-hidden rounded-xl">
+                                <a href="assets/images/portfolio/4.jpg" class="lightbox" title="">
+                                    <img src="assets/images/portfolio/4.jpg" class="rounded-xl" alt="">
+                                </a>
+                            </div>
+                            <div class="content duration-700 ease-in-out">
+                                <div class="bg-white dark:bg-slate-900 p-4 rounded-xl absolute z-10 bottom-3 start-3 duration-700 ease-in-out scale-0 group-hover:scale-100">
+                                    <a href="portfolio-detail-three.html" class="h6 text-[15px] font-medium hover:text-orange-500 duration-500 ease-in-out">Mockup Collection</a>
+                                    <p class="text-slate-400 dark:text-white/60 mb-0">Abstract</p>
+                                </div>
+                            </div>
+
+                            <div class="absolute inset-0 bg-orange-500 rounded-xl group-hover:-mt-[10px] group-hover:-ms-[10px] h-[98%] w-[98%] duration-700 -z-1"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="lg:w-1/4 md:w-1/3 p-3 picture-item" data-groups='["branding"]'>
+                        <div class="group relative block rounded-xl duration-700 ease-in-out">
+                            <div class="relative overflow-hidden rounded-xl">
+                                <a href="assets/images/portfolio/5.jpg" class="lightbox" title="">
+                                    <img src="assets/images/portfolio/5.jpg" class="rounded-xl" alt="">
+                                </a>
+                            </div>
+                            <div class="content duration-700 ease-in-out">
+                                <div class="bg-white dark:bg-slate-900 p-4 rounded-xl absolute z-10 bottom-3 start-3 duration-700 ease-in-out scale-0 group-hover:scale-100">
+                                    <a href="portfolio-detail-three.html" class="h6 text-[15px] font-medium hover:text-orange-500 duration-500 ease-in-out">Mockup Collection</a>
+                                    <p class="text-slate-400 dark:text-white/60 mb-0">Abstract</p>
+                                </div>
+                            </div>
+
+                            <div class="absolute inset-0 bg-orange-500 rounded-xl group-hover:-mt-[10px] group-hover:-ms-[10px] h-[98%] w-[98%] duration-700 -z-1"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="lg:w-1/4 md:w-1/3 p-3 picture-item" data-groups='["branding"]'>
+                        <div class="group relative block rounded-xl duration-700 ease-in-out">
+                            <div class="relative overflow-hidden rounded-xl">
+                                <a href="assets/images/portfolio/6.jpg" class="lightbox" title="">
+                                    <img src="assets/images/portfolio/6.jpg" class="rounded-xl" alt="">
+                                </a>
+                            </div>
+                            <div class="content duration-700 ease-in-out">
+                                <div class="bg-white dark:bg-slate-900 p-4 rounded-xl absolute z-10 bottom-3 start-3 duration-700 ease-in-out scale-0 group-hover:scale-100">
+                                    <a href="portfolio-detail-three.html" class="h6 text-[15px] font-medium hover:text-orange-500 duration-500 ease-in-out">Mockup Collection</a>
+                                    <p class="text-slate-400 dark:text-white/60 mb-0">Abstract</p>
+                                </div>
+                            </div>
+
+                            <div class="absolute inset-0 bg-orange-500 rounded-xl group-hover:-mt-[10px] group-hover:-ms-[10px] h-[98%] w-[98%] duration-700 -z-1"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="lg:w-1/4 md:w-1/3 p-3 picture-item" data-groups='["designing"]'>
+                        <div class="group relative block rounded-xl duration-700 ease-in-out">
+                            <div class="relative overflow-hidden rounded-xl">
+                                <a href="assets/images/portfolio/7.jpg" class="lightbox" title="">
+                                    <img src="assets/images/portfolio/7.jpg" class="rounded-xl" alt="">
+                                </a>
+                            </div>
+                            <div class="content duration-700 ease-in-out">
+                                <div class="bg-white dark:bg-slate-900 p-4 rounded-xl absolute z-10 bottom-3 start-3 duration-700 ease-in-out scale-0 group-hover:scale-100">
+                                    <a href="portfolio-detail-three.html" class="h6 text-[15px] font-medium hover:text-orange-500 duration-500 ease-in-out">Mockup Collection</a>
+                                    <p class="text-slate-400 dark:text-white/60 mb-0">Abstract</p>
+                                </div>
+                            </div>
+
+                            <div class="absolute inset-0 bg-orange-500 rounded-xl group-hover:-mt-[10px] group-hover:-ms-[10px] h-[98%] w-[98%] duration-700 -z-1"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="lg:w-1/4 md:w-1/3 p-3 picture-item" data-groups='["development"]'>
+                        <div class="group relative block rounded-xl duration-700 ease-in-out">
+                            <div class="relative overflow-hidden rounded-xl">
+                                <a href="assets/images/portfolio/8.jpg" class="lightbox" title="">
+                                    <img src="assets/images/portfolio/8.jpg" class="rounded-xl" alt="">
+                                </a>
+                            </div>
+                            <div class="content duration-700 ease-in-out">
+                                <div class="bg-white dark:bg-slate-900 p-4 rounded-xl absolute z-10 bottom-3 start-3 duration-700 ease-in-out scale-0 group-hover:scale-100">
+                                    <a href="portfolio-detail-three.html" class="h6 text-[15px] font-medium hover:text-orange-500 duration-500 ease-in-out">Mockup Collection</a>
+                                    <p class="text-slate-400 dark:text-white/60 mb-0">Abstract</p>
+                                </div>
+                            </div>
+
+                            <div class="absolute inset-0 bg-orange-500 rounded-xl group-hover:-mt-[10px] group-hover:-ms-[10px] h-[98%] w-[98%] duration-700 -z-1"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="lg:w-1/4 md:w-1/3 p-3 picture-item" data-groups='["photography"]'>
+                        <div class="group relative block rounded-xl duration-700 ease-in-out">
+                            <div class="relative overflow-hidden rounded-xl">
+                                <a href="assets/images/portfolio/23.jpg" class="lightbox" title="">
+                                    <img src="assets/images/portfolio/23.jpg" class="rounded-xl" alt="">
+                                </a>
+                            </div>
+                            <div class="content duration-700 ease-in-out">
+                                <div class="bg-white dark:bg-slate-900 p-4 rounded-xl absolute z-10 bottom-3 start-3 duration-700 ease-in-out scale-0 group-hover:scale-100">
+                                    <a href="portfolio-detail-three.html" class="h6 text-[15px] font-medium hover:text-orange-500 duration-500 ease-in-out">Mockup Collection</a>
+                                    <p class="text-slate-400 dark:text-white/60 mb-0">Abstract</p>
+                                </div>
+                            </div>
+
+                            <div class="absolute inset-0 bg-orange-500 rounded-xl group-hover:-mt-[10px] group-hover:-ms-[10px] h-[98%] w-[98%] duration-700 -z-1"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="lg:w-1/4 md:w-1/3 p-3 picture-item" data-groups='["photography"]'>
+                        <div class="group relative block rounded-xl duration-700 ease-in-out">
+                            <div class="relative overflow-hidden rounded-xl">
+                                <a href="assets/images/portfolio/20.jpg" class="lightbox" title="">
+                                    <img src="assets/images/portfolio/20.jpg" class="rounded-xl" alt="">
+                                </a>
+                            </div>
+                            <div class="content duration-700 ease-in-out">
+                                <div class="bg-white dark:bg-slate-900 p-4 rounded-xl absolute z-10 bottom-3 start-3 duration-700 ease-in-out scale-0 group-hover:scale-100">
+                                    <a href="portfolio-detail-three.html" class="h6 text-[15px] font-medium hover:text-orange-500 duration-500 ease-in-out">Mockup Collection</a>
+                                    <p class="text-slate-400 dark:text-white/60 mb-0">Abstract</p>
+                                </div>
+                            </div>
+
+                            <div class="absolute inset-0 bg-orange-500 rounded-xl group-hover:-mt-[10px] group-hover:-ms-[10px] h-[98%] w-[98%] duration-700 -z-1"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="lg:w-1/4 md:w-1/3 p-3 picture-item" data-groups='["branding"]'>
+                        <div class="group relative block rounded-xl duration-700 ease-in-out">
+                            <div class="relative overflow-hidden rounded-xl">
+                                <a href="assets/images/portfolio/21.jpg" class="lightbox" title="">
+                                    <img src="assets/images/portfolio/21.jpg" class="rounded-xl" alt="">
+                                </a>
+                            </div>
+                            <div class="content duration-700 ease-in-out">
+                                <div class="bg-white dark:bg-slate-900 p-4 rounded-xl absolute z-10 bottom-3 start-3 duration-700 ease-in-out scale-0 group-hover:scale-100">
+                                    <a href="portfolio-detail-three.html" class="h6 text-[15px] font-medium hover:text-orange-500 duration-500 ease-in-out">Mockup Collection</a>
+                                    <p class="text-slate-400 dark:text-white/60 mb-0">Abstract</p>
+                                </div>
+                            </div>
+
+                            <div class="absolute inset-0 bg-orange-500 rounded-xl group-hover:-mt-[10px] group-hover:-ms-[10px] h-[98%] w-[98%] duration-700 -z-1"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="lg:w-1/4 md:w-1/3 p-3 picture-item" data-groups='["branding"]'>
+                        <div class="group relative block rounded-xl duration-700 ease-in-out">
+                            <div class="relative overflow-hidden rounded-xl">
+                                <a href="assets/images/portfolio/22.jpg" class="lightbox" title="">
+                                    <img src="assets/images/portfolio/22.jpg" class="rounded-xl" alt="">
+                                </a>
+                            </div>
+                            <div class="content duration-700 ease-in-out">
+                                <div class="bg-white dark:bg-slate-900 p-4 rounded-xl absolute z-10 bottom-3 start-3 duration-700 ease-in-out scale-0 group-hover:scale-100">
+                                    <a href="portfolio-detail-three.html" class="h6 text-[15px] font-medium hover:text-orange-500 duration-500 ease-in-out">Mockup Collection</a>
+                                    <p class="text-slate-400 dark:text-white/60 mb-0">Abstract</p>
+                                </div>
+                            </div>
+
+                            <div class="absolute inset-0 bg-orange-500 rounded-xl group-hover:-mt-[10px] group-hover:-ms-[10px] h-[98%] w-[98%] duration-700 -z-1"></div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--end container-->
+
+            <div class="container relative lg:mt-24 mt-16">
+                <div class="grid grid-cols-1 pb-6 text-center">
+                    <h3 class="mb-4 md:text-2xl text-xl font-medium">Customer's Review</h3>
+
+                    <p class="text-slate-400 dark:text-white/60 max-w-xl mx-auto">This is just a simple text made for this unique and awesome template, you can replace it with any text.</p>
+                </div><!--end grid-->
+
+                <div class="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 mt-6 gap-6">
+                    <ul class="space-y-6">
+                        <li class="rounded-xl shadow dark:shadow-gray-800 p-6 bg-white dark:bg-slate-900">
+                            <div class="flex items-center pb-6 border-b border-gray-100 dark:border-gray-800">
+                                <img src="assets/images/team/01.jpg" class="h-14 w-14 rounded-full shadow dark:shadow-gray-800" alt="">
+
+                                <div class="ps-3">
+                                    <a href="" class="text-[16px] font-medium hover:text-orange-500 duration-500">Thomas Israel</a>
+                                    <p class="text-slate-400 dark:text-white/60">C.E.O</p>
+                                </div>
+                            </div>
+
+                            <div class="mt-6">
+                                <p class="text-slate-400 dark:text-white/60">I didn't know a thing about icon design until I read this book. Now I can create any icon I need in no time. Great resource!</p>
+                                <ul class="list-none mb-0 text-amber-400 mt-2">
+                                    <li class="inline"><i class="mdi mdi-star"></i></li>
+                                    <li class="inline"><i class="mdi mdi-star"></i></li>
+                                    <li class="inline"><i class="mdi mdi-star"></i></li>
+                                    <li class="inline"><i class="mdi mdi-star"></i></li>
+                                    <li class="inline"><i class="mdi mdi-star"></i></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="rounded-xl shadow dark:shadow-gray-800 p-6 bg-white dark:bg-slate-900">
+                            <div class="flex items-center pb-6 border-b border-gray-100 dark:border-gray-800">
+                                <img src="assets/images/team/05.jpg" class="h-14 w-14 rounded-full shadow dark:shadow-gray-800" alt="">
+
+                                <div class="ps-3">
+                                    <a href="" class="text-[16px] font-medium hover:text-orange-500 duration-500">Barbara McIntosh</a>
+                                    <p class="text-slate-400 dark:text-white/60">C.E.O</p>
+                                </div>
+                            </div>
+
+                            <div class="mt-6">
+                                <p class="text-slate-400 dark:text-white/60">There are so many things I had to do with my old software that I just don't do at all with Techwind. Suspicious but I can't say I don't love it.</p>
+                                <ul class="list-none mb-0 text-amber-400 mt-2">
+                                    <li class="inline"><i class="mdi mdi-star"></i></li>
+                                    <li class="inline"><i class="mdi mdi-star"></i></li>
+                                    <li class="inline"><i class="mdi mdi-star"></i></li>
+                                    <li class="inline"><i class="mdi mdi-star"></i></li>
+                                    <li class="inline"><i class="mdi mdi-star"></i></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul class="space-y-6 hidden sm:block">
+                        <li class="rounded-xl shadow dark:shadow-gray-800 p-6 bg-white dark:bg-slate-900">
+                            <div class="flex items-center pb-6 border-b border-gray-100 dark:border-gray-800">
+                                <img src="assets/images/team/02.jpg" class="h-14 w-14 rounded-full shadow dark:shadow-gray-800" alt="">
+
+                                <div class="ps-3">
+                                    <a href="" class="text-[16px] font-medium hover:text-orange-500 duration-500">Carl Oliver</a>
+                                    <p class="text-slate-400 dark:text-white/60">C.E.O</p>
+                                </div>
+                            </div>
+
+                            <div class="mt-6">
+                                <p class="text-slate-400 dark:text-white/60">The best part about Techwind is every time I pay my employees, my bank balance doesn't go down like it used to. Looking forward to spending this extra cash when I figure out why my card is being declined.</p>
+                                <ul class="list-none mb-0 text-amber-400 mt-2">
+                                    <li class="inline"><i class="mdi mdi-star"></i></li>
+                                    <li class="inline"><i class="mdi mdi-star"></i></li>
+                                    <li class="inline"><i class="mdi mdi-star"></i></li>
+                                    <li class="inline"><i class="mdi mdi-star"></i></li>
+                                    <li class="inline"><i class="mdi mdi-star"></i></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="rounded-xl shadow dark:shadow-gray-800 p-6 bg-white dark:bg-slate-900">
+                            <div class="flex items-center pb-6 border-b border-gray-100 dark:border-gray-800">
+                                <img src="assets/images/team/04.jpg" class="h-14 w-14 rounded-full shadow dark:shadow-gray-800" alt="">
+
+                                <div class="ps-3">
+                                    <a href="" class="text-[16px] font-medium hover:text-orange-500 duration-500">Jill Webb</a>
+                                    <p class="text-slate-400 dark:text-white/60">C.E.O</p>
+                                </div>
+                            </div>
+
+                            <div class="mt-6">
+                                <p class="text-slate-400 dark:text-white/60">I'm trying to get a hold of someone in support, I'm in a lot of trouble right now and they are saying it has something to do with my books. Please get back to me right away.</p>
+                                <ul class="list-none mb-0 text-amber-400 mt-2">
+                                    <li class="inline"><i class="mdi mdi-star"></i></li>
+                                    <li class="inline"><i class="mdi mdi-star"></i></li>
+                                    <li class="inline"><i class="mdi mdi-star"></i></li>
+                                    <li class="inline"><i class="mdi mdi-star"></i></li>
+                                    <li class="inline"><i class="mdi mdi-star"></i></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul class="space-y-6 hidden lg:block">
+                        <li class="rounded-xl shadow dark:shadow-gray-800 p-6 bg-white dark:bg-slate-900">
+                            <div class="flex items-center pb-6 border-b border-gray-100 dark:border-gray-800">
+                                <img src="assets/images/team/03.jpg" class="h-14 w-14 rounded-full shadow dark:shadow-gray-800" alt="">
+
+                                <div class="ps-3">
+                                    <a href="" class="text-[16px] font-medium hover:text-orange-500 duration-500">Barbara McIntosh</a>
+                                    <p class="text-slate-400 dark:text-white/60">C.E.O</p>
+                                </div>
+                            </div>
+
+                            <div class="mt-6">
+                                <p class="text-slate-400 dark:text-white/60">I used to have to remit tax to the EU and with Techwind I somehow don't have to do that anymore. Nervous to travel there now though.</p>
+                                <ul class="list-none mb-0 text-amber-400 mt-2">
+                                    <li class="inline"><i class="mdi mdi-star"></i></li>
+                                    <li class="inline"><i class="mdi mdi-star"></i></li>
+                                    <li class="inline"><i class="mdi mdi-star"></i></li>
+                                    <li class="inline"><i class="mdi mdi-star"></i></li>
+                                    <li class="inline"><i class="mdi mdi-star"></i></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="rounded-xl shadow dark:shadow-gray-800 p-6 bg-white dark:bg-slate-900">
+                            <div class="flex items-center pb-6 border-b border-gray-100 dark:border-gray-800">
+                                <img src="assets/images/team/06.jpg" class="h-14 w-14 rounded-full shadow dark:shadow-gray-800" alt="">
+
+                                <div class="ps-3">
+                                    <a href="" class="text-[16px] font-medium hover:text-orange-500 duration-500">Janisha Doll</a>
+                                    <p class="text-slate-400 dark:text-white/60">C.E.O</p>
+                                </div>
+                            </div>
+
+                            <div class="mt-6">
+                                <p class="text-slate-400 dark:text-white/60">This is the fourth email I've sent to your support team. I am literally being held in jail for tax fraud. Please answer your damn emails, this is important.</p>
+                                <ul class="list-none mb-0 text-amber-400 mt-2">
+                                    <li class="inline"><i class="mdi mdi-star"></i></li>
+                                    <li class="inline"><i class="mdi mdi-star"></i></li>
+                                    <li class="inline"><i class="mdi mdi-star"></i></li>
+                                    <li class="inline"><i class="mdi mdi-star"></i></li>
+                                    <li class="inline"><i class="mdi mdi-star"></i></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div><!--end container-->
+
+            <div class="container relative lg:mt-24 mt-16">
+                <div class="grid grid-cols-1 pb-6 text-center">
+                    <h3 class="mb-4 md:text-2xl text-xl font-medium">Meet Our Teammates</h3>
+
+                    <p class="text-slate-400 dark:text-white/60 max-w-xl mx-auto">This is just a simple text made for this unique and awesome template, you can replace it with any text.</p>
+                </div><!--end grid-->
+
+                <div class="grid md:grid-cols-12 grid-cols-1 mt-6 gap-6">
+                    <div class="lg:col-span-3 md:col-span-6">
+                        <div class="group text-center">
+                            <div class="relative inline-block mx-auto h-52 w-52 rounded-full overflow-hidden">
+                                <img src="assets/images/team/04.jpg" class="" alt="">
+
+                                <ul class="list-none absolute top-1/2 -translate-y-1/2 -end-20 group-hover:end-5 transition-all duration-500 ease-in-out">
+                                    <li class=""><a href="" class="h-8 w-8 inline-flex items-center text-center justify-center text-base font-normal tracking-wide border align-middle transition duration-500 ease-in-out rounded-full bg-orange-500 hover:bg-orange-600 border-orange-500 hover:border-orange-600 text-white"><i data-feather="facebook" class="h-4 w-4"></i></a></li>
+                                    <li class="mt-1"><a href="" class="h-8 w-8 inline-flex items-center text-center justify-center text-base font-normal tracking-wide border align-middle transition duration-500 ease-in-out rounded-full bg-orange-500 hover:bg-orange-600 border-orange-500 hover:border-orange-600 text-white"><i data-feather="instagram" class="h-4 w-4"></i></a></li>
+                                    <li class="mt-1"><a href="" class="h-8 w-8 inline-flex items-center text-center justify-center text-base font-normal tracking-wide border align-middle transition duration-500 ease-in-out rounded-full bg-orange-500 hover:bg-orange-600 border-orange-500 hover:border-orange-600 text-white"><i data-feather="linkedin" class="h-4 w-4"></i></a></li>
+                                </ul><!--end icon-->
+                            </div>
+
+                            <div class="content mt-3">
+                                <a href="" class="text-lg font-medium hover:text-orange-500 duration-500">Jack John</a>
+                                <p class="text-slate-400 dark:text-white/60">Designer</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="lg:col-span-3 md:col-span-6">
+                        <div class="group text-center">
+                            <div class="relative inline-block mx-auto h-52 w-52 rounded-full overflow-hidden">
+                                <img src="assets/images/team/05.jpg" class="" alt="">
+
+                                <ul class="list-none absolute top-1/2 -translate-y-1/2 -end-20 group-hover:end-5 transition-all duration-500 ease-in-out">
+                                    <li class=""><a href="" class="h-8 w-8 inline-flex items-center text-center justify-center text-base font-normal tracking-wide border align-middle transition duration-500 ease-in-out rounded-full bg-orange-500 hover:bg-orange-600 border-orange-500 hover:border-orange-600 text-white"><i data-feather="facebook" class="h-4 w-4"></i></a></li>
+                                    <li class="mt-1"><a href="" class="h-8 w-8 inline-flex items-center text-center justify-center text-base font-normal tracking-wide border align-middle transition duration-500 ease-in-out rounded-full bg-orange-500 hover:bg-orange-600 border-orange-500 hover:border-orange-600 text-white"><i data-feather="instagram" class="h-4 w-4"></i></a></li>
+                                    <li class="mt-1"><a href="" class="h-8 w-8 inline-flex items-center text-center justify-center text-base font-normal tracking-wide border align-middle transition duration-500 ease-in-out rounded-full bg-orange-500 hover:bg-orange-600 border-orange-500 hover:border-orange-600 text-white"><i data-feather="linkedin" class="h-4 w-4"></i></a></li>
+                                </ul><!--end icon-->
+                            </div>
+
+                            <div class="content mt-3">
+                                <a href="" class="text-lg font-medium hover:text-orange-500 duration-500">Krista John</a>
+                                <p class="text-slate-400 dark:text-white/60">Designer</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="lg:col-span-3 md:col-span-6">
+                        <div class="group text-center">
+                            <div class="relative inline-block mx-auto h-52 w-52 rounded-full overflow-hidden">
+                                <img src="assets/images/team/06.jpg" class="" alt="">
+
+                                <ul class="list-none absolute top-1/2 -translate-y-1/2 -end-20 group-hover:end-5 transition-all duration-500 ease-in-out">
+                                    <li class=""><a href="" class="h-8 w-8 inline-flex items-center text-center justify-center text-base font-normal tracking-wide border align-middle transition duration-500 ease-in-out rounded-full bg-orange-500 hover:bg-orange-600 border-orange-500 hover:border-orange-600 text-white"><i data-feather="facebook" class="h-4 w-4"></i></a></li>
+                                    <li class="mt-1"><a href="" class="h-8 w-8 inline-flex items-center text-center justify-center text-base font-normal tracking-wide border align-middle transition duration-500 ease-in-out rounded-full bg-orange-500 hover:bg-orange-600 border-orange-500 hover:border-orange-600 text-white"><i data-feather="instagram" class="h-4 w-4"></i></a></li>
+                                    <li class="mt-1"><a href="" class="h-8 w-8 inline-flex items-center text-center justify-center text-base font-normal tracking-wide border align-middle transition duration-500 ease-in-out rounded-full bg-orange-500 hover:bg-orange-600 border-orange-500 hover:border-orange-600 text-white"><i data-feather="linkedin" class="h-4 w-4"></i></a></li>
+                                </ul><!--end icon-->
+                            </div>
+
+                            <div class="content mt-3">
+                                <a href="" class="text-lg font-medium hover:text-orange-500 duration-500">Roger Jackson</a>
+                                <p class="text-slate-400 dark:text-white/60">Designer</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="lg:col-span-3 md:col-span-6">
+                        <div class="group text-center">
+                            <div class="relative inline-block mx-auto h-52 w-52 rounded-full overflow-hidden">
+                                <img src="assets/images/team/07.jpg" class="" alt="">
+
+                                <ul class="list-none absolute top-1/2 -translate-y-1/2 -end-20 group-hover:end-5 transition-all duration-500 ease-in-out">
+                                    <li class=""><a href="" class="h-8 w-8 inline-flex items-center text-center justify-center text-base font-normal tracking-wide border align-middle transition duration-500 ease-in-out rounded-full bg-orange-500 hover:bg-orange-600 border-orange-500 hover:border-orange-600 text-white"><i data-feather="facebook" class="h-4 w-4"></i></a></li>
+                                    <li class="mt-1"><a href="" class="h-8 w-8 inline-flex items-center text-center justify-center text-base font-normal tracking-wide border align-middle transition duration-500 ease-in-out rounded-full bg-orange-500 hover:bg-orange-600 border-orange-500 hover:border-orange-600 text-white"><i data-feather="instagram" class="h-4 w-4"></i></a></li>
+                                    <li class="mt-1"><a href="" class="h-8 w-8 inline-flex items-center text-center justify-center text-base font-normal tracking-wide border align-middle transition duration-500 ease-in-out rounded-full bg-orange-500 hover:bg-orange-600 border-orange-500 hover:border-orange-600 text-white"><i data-feather="linkedin" class="h-4 w-4"></i></a></li>
+                                </ul><!--end icon-->
+                            </div>
+
+                            <div class="content mt-3">
+                                <a href="" class="text-lg font-medium hover:text-orange-500 duration-500">Johnny English</a>
+                                <p class="text-slate-400 dark:text-white/60">Designer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--end grid-->
+            </div><!--end container-->
+
+            <div class="container relative md:mt-24 mt-16">
+                <div class="grid grid-cols-1 pb-6 text-center">
+                    <h3 class="mb-6 md:text-2xl text-xl font-medium">Blogs & News</h3>
+
+                    <p class="text-slate-400 dark:text-white/60 max-w-xl mx-auto">This is just a simple text made for this unique and awesome template, you can replace it with any text.</p>
+                </div><!--end grid-->
+
+                <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-6 gap-6">
+                    <div class="group">
+                        <div class="relative overflow-hidden rounded-xl shadow-md dark:shadow-gray-700">
+                            <img src="assets/images/blog/1.jpg" class="" alt="">
+                            <div class="absolute inset-0 bg-gradient-to-b to-slate-900 from-transparent opacity-0 group-hover:opacity-100 duration-500"></div>
+                            <div class="absolute start-4 bottom-4 opacity-0 group-hover:opacity-100 flex items-center duration-500">
+                                <img src="assets/images/team/01.jpg" class="h-9 w-9 rounded-xl" alt="">
+                                <div class="ms-2">
+                                    <a href="" class="text-white hover:text-orange-500 text-[15px]">Calvin Carlo</a>
+                                    <p class="text-white/70 text-sm">5 Min Read</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-4">
+                            <a href="blog-detail.html" class="title text-lg font-medium hover:text-orange-500 duration-500">Design your apps in your own way</a>
+                            <p class="text-slate-400 dark:text-white/60 mt-3">The phrasal sequence of the is now so that many campaign and benefit</p>
+                            
+                            <div class="mt-3">
+                                <a href="blog-detail.html" class="hover:text-orange-500">Read More <i class="mdi mdi-arrow-right align-middle"></i></a>
+                            </div>
+                        </div>
+                    </div><!--end content-->
+
+                    <div class="group">
+                        <div class="relative overflow-hidden rounded-xl shadow-md dark:shadow-gray-700">
+                            <img src="assets/images/blog/2.jpg" class="" alt="">
+                            <div class="absolute inset-0 bg-gradient-to-b to-slate-900 from-transparent opacity-0 group-hover:opacity-100 duration-500"></div>
+                            <div class="absolute start-4 bottom-4 opacity-0 group-hover:opacity-100 flex items-center duration-500">
+                                <img src="assets/images/team/01.jpg" class="h-9 w-9 rounded-xl" alt="">
+                                <div class="ms-2">
+                                    <a href="" class="text-white hover:text-orange-500 text-[15px]">Calvin Carlo</a>
+                                    <p class="text-white/70 text-sm">5 Min Read</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-4">
+                            <a href="blog-detail.html" class="title text-lg font-medium hover:text-orange-500 duration-500">How apps is changing the IT world</a>
+                            <p class="text-slate-400 dark:text-white/60 mt-3">The phrasal sequence of the is now so that many campaign and benefit</p>
+                            
+                            <div class="mt-3">
+                                <a href="blog-detail.html" class="hover:text-orange-500">Read More <i class="mdi mdi-arrow-right align-middle"></i></a>
+                            </div>
+                        </div>
+                    </div><!--end content-->
+
+                    <div class="group">
+                        <div class="relative overflow-hidden rounded-xl shadow-md dark:shadow-gray-700">
+                            <img src="assets/images/blog/3.jpg" class="" alt="">
+                            <div class="absolute inset-0 bg-gradient-to-b to-slate-900 from-transparent opacity-0 group-hover:opacity-100 duration-500"></div>
+                            <div class="absolute start-4 bottom-4 opacity-0 group-hover:opacity-100 flex items-center duration-500">
+                                <img src="assets/images/team/01.jpg" class="h-9 w-9 rounded-xl" alt="">
+                                <div class="ms-2">
+                                    <a href="" class="text-white hover:text-orange-500 text-[15px]">Calvin Carlo</a>
+                                    <p class="text-white/70 text-sm">5 Min Read</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-4">
+                            <a href="blog-detail.html" class="title text-lg font-medium hover:text-orange-500 duration-500">Smartest Applications for Business</a>
+                            <p class="text-slate-400 dark:text-white/60 mt-3">The phrasal sequence of the is now so that many campaign and benefit</p>
+                            
+                            <div class="mt-3">
+                                <a href="blog-detail.html" class="hover:text-orange-500">Read More <i class="mdi mdi-arrow-right align-middle"></i></a>
+                            </div>
+                        </div>
+                    </div><!--end content-->
+                </div><!--end grid-->
+            </div><!--end container-->
+
+            <div class="container relative md:mt-24 mt-16">
+                <div class="grid md:grid-cols-2 grid-cols-1 items-center gap-[30px]">
+                    <img src="assets/images/contact.svg" alt="">
+
+                    <div class="lg:ms-5">
+                        <div class="bg-white dark:bg-slate-900 rounded-xl shadow dark:shadow-gray-700 p-6">
+                            <h3 class="mb-6 text-2xl leading-normal font-medium">Get in touch !</h3>
+
+                            <form method="post" name="myForm" id="myForm" onsubmit="return validateForm()">
+                                <p class="mb-0" id="error-msg"></p>
+                                <div id="simple-msg"></div>
+                                <div class="grid lg:grid-cols-12 lg:gap-6">
+                                    <div class="lg:col-span-6 mb-5">
+                                        <label for="name" class="form-label font-medium">Your Name:</label>
+                                        <input name="name" id="name" type="text" class="form-input w-full py-2 px-3 h-10 bg-transparent border border-inherit dark:border-gray-800 dark:bg-slate-900 dark:text-slate-200 rounded-xl outline-none focus:border-orange-500/50 dark:focus:border-orange-500/50 focus:ring-0 mt-2" placeholder="Name :">
+                                    </div>
+    
+                                    <div class="lg:col-span-6 mb-5">
+                                        <label for="email" class="form-label font-medium">Your Email:</label>
+                                        <input name="email" id="email" type="email" class="form-input w-full py-2 px-3 h-10 bg-transparent border border-inherit dark:border-gray-800 dark:bg-slate-900 dark:text-slate-200 rounded-xl outline-none focus:border-orange-500/50 dark:focus:border-orange-500/50 focus:ring-0 mt-2" placeholder="Email :">
+                                    </div>
+                                </div>
+
+                                <div class="grid grid-cols-1">
+                                    <div class="mb-5">
+                                        <label for="subject" class="form-label font-medium">Your Question:</label>
+                                        <input name="subject" id="subject" class="form-input w-full py-2 px-3 h-10 bg-transparent border border-inherit dark:border-gray-800 dark:bg-slate-900 dark:text-slate-200 rounded-xl outline-none focus:border-orange-500/50 dark:focus:border-orange-500/50 focus:ring-0 mt-2" placeholder="Subject :">
+                                    </div>
+
+                                    <div class="mb-5">
+                                        <label for="comments" class="form-label font-medium">Your Comment:</label>
+                                        <textarea name="comments" id="comments" class="form-input w-full py-2 px-3 bg-transparent border border-inherit dark:border-gray-800 dark:bg-slate-900 dark:text-slate-200 rounded-xl outline-none focus:border-orange-500/50 dark:focus:border-orange-500/50 focus:ring-0 mt-2 textarea h-28" placeholder="Message :"></textarea>
+                                    </div>
+                                </div>
+                                <button type="submit" id="submit" name="send" class="py-2 px-5 inline-block font-normal tracking-wide border align-middle transition duration-500 ease-in-out text-base text-center bg-orange-500 hover:bg-orange-600 border-orange-500 hover:border-orange-600 text-white rounded-xl">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- End -->
+
+        <!-- Business Partner -->
+        <section class="py-6 border-t border-b border-gray-100 dark:border-gray-700">
+            <div class="container relative">
+                <div class="grid md:grid-cols-6 grid-cols-2 justify-center gap-[30px]">
+                    <div class="mx-auto py-4">
+                        <img src="assets/images/team/amazon.svg" class="h-6" alt="">
+                    </div>
+
+                    <div class="mx-auto py-4">
+                        <img src="assets/images/team/google.svg" class="h-6" alt="">
+                    </div>
+                    
+                    <div class="mx-auto py-4">
+                        <img src="assets/images/team/lenovo.svg" class="h-6" alt="">
+                    </div>
+                    
+                    <div class="mx-auto py-4">
+                        <img src="assets/images/team/paypal.svg" class="h-6" alt="">
+                    </div>
+                    
+                    <div class="mx-auto py-4">
+                        <img src="assets/images/team/shopify.svg" class="h-6" alt="">
+                    </div>
+                    
+                    <div class="mx-auto py-4">
+                        <img src="assets/images/team/spotify.svg" class="h-6" alt="">
+                    </div>
+                </div><!--end grid-->
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- Business Partner -->
+
+        <!-- Start Footer -->
+        <footer class="relative bg-gray-900 overflow-hidden">
+            <div class="py-[30px] px-0 border-t border-slate-800">
+                <div class="container relative text-center">
+                    <div class="grid lg:grid-cols-12 md:grid-cols-3 grid-cols-1 items-center">
+                        <div class="lg:col-span-3 md:text-start text-center">
+                            <a href="#" class="text-[22px] focus:outline-none">
+                                 <h2 class=" font-semibold text-white md:text-3xl text-lg lg:mt-0  mt-5">Flow<span class="text-orange-500">Vico</span></h2>
+                            </a>
+                        </div>
+
+                        <div class="lg:col-span-5 text-center mt-6 md:mt-0">
+                            <p class="mb-0 text-gray-400">© <script>document.write(new Date().getFullYear())</script> Flowvico. Design with <i class="mdi mdi-heart text-red-600"></i> by <a href="https://Flowdev Teams.in/" target="_blank" class="text-reset">Flowdev Teams</a>.</p>
+                        </div>
+
+                        <ul class="lg:col-span-4 list-none md:text-end text-center mt-6 md:mt-0">
+                            <li class="inline"><a href="https://1.envato.market/Flowvico" target="_blank" class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-[15px] text-center border border-gray-800 dark:border-slate-800 rounded-xl hover:border-orange-500 dark:hover:border-orange-500 hover:bg-orange-500 dark:hover:bg-orange-500 text-slate-300 hover:text-white"><i data-feather="shopping-cart" class="h-[14px] w-[14px] align-middle" title="Buy Now"></i></a></li>
+                            <li class="inline"><a href="https://dribbble.com/Flowdev Teams" target="_blank" class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-[15px] text-center border border-gray-800 dark:border-slate-800 rounded-xl hover:border-orange-500 dark:hover:border-orange-500 hover:bg-orange-500 dark:hover:bg-orange-500 text-slate-300 hover:text-white"><i data-feather="dribbble" class="h-[14px] w-[14px] align-middle" title="dribbble"></i></a></li>
+                            <li class="inline"><a href="http://linkedin.com/company/Flowdev Teams" target="_blank" class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-[15px] text-center border border-gray-800 dark:border-slate-800 rounded-xl hover:border-orange-500 dark:hover:border-orange-500 hover:bg-orange-500 dark:hover:bg-orange-500 text-slate-300 hover:text-white"><i data-feather="linkedin" class="h-[14px] w-[14px] align-middle" title="Linkedin"></i></a></li>
+                            <li class="inline"><a href="https://www.facebook.com/Flowdev Teams" target="_blank" class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-[15px] text-center border border-gray-800 dark:border-slate-800 rounded-xl hover:border-orange-500 dark:hover:border-orange-500 hover:bg-orange-500 dark:hover:bg-orange-500 text-slate-300 hover:text-white"><i data-feather="facebook" class="h-[14px] w-[14px] align-middle" title="facebook"></i></a></li>
+                            <li class="inline"><a href="https://www.instagram.com/Flowdev Teams/" target="_blank" class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-[15px] text-center border border-gray-800 dark:border-slate-800 rounded-xl hover:border-orange-500 dark:hover:border-orange-500 hover:bg-orange-500 dark:hover:bg-orange-500 text-slate-300 hover:text-white"><i data-feather="instagram" class="h-[14px] w-[14px] align-middle" title="instagram"></i></a></li>
+                            <li class="inline"><a href="https://twitter.com/Flowdev Teams" target="_blank" class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-[15px] text-center border border-gray-800 dark:border-slate-800 rounded-xl hover:border-orange-500 dark:hover:border-orange-500 hover:bg-orange-500 dark:hover:bg-orange-500 text-slate-300 hover:text-white"><i data-feather="twitter" class="h-[14px] w-[14px] align-middle" title="twitter"></i></a></li>
+                            <li class="inline"><a href="mailto:support@Flowdev Teams.in" class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-[15px] text-center border border-gray-800 dark:border-slate-800 rounded-xl hover:border-orange-500 dark:hover:border-orange-500 hover:bg-orange-500 dark:hover:bg-orange-500 text-slate-300 hover:text-white"><i data-feather="mail" class="h-[14px] w-[14px] align-middle" title="email"></i></a></li>
+                            <li class="inline"><a href="https://forms.gle/QkTueCikDGqJnbky9" target="_blank" class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-[15px] text-center border border-gray-800 dark:border-slate-800 rounded-xl hover:border-orange-500 dark:hover:border-orange-500 hover:bg-orange-500 dark:hover:bg-orange-500 text-slate-300 hover:text-white"><i data-feather="file-text" class="h-[14px] w-[14px] align-middle" title="customization"></i></a></li>
+                        </ul><!--end icon-->
+                    </div><!--end grid-->
+                </div><!--end container-->
+            </div>
+        </footer><!--end footer-->
+        <!-- End Footer -->
+
+        <!-- Back to top -->
+        <a href="#" onclick="topFunction()" id="back-to-top" class="back-to-top fixed hidden text-lg rounded-xl z-10 bottom-5 end-5 h-8 w-8 text-center bg-orange-500 hover:bg-orange-600 text-white leading-9 justify-center items-center duration-500"><i data-feather="arrow-up" class="h-[14px] w-[14px] stroke-[3]"></i></a>
+        <!-- Back to top -->
+
+        <!-- Switcher -->
+        <div class="fixed top-1/4 -right-2 z-3">
+            <span class="relative inline-block rotate-90">
+                <input type="checkbox" class="checkbox opacity-0 absolute" id="chk" />
+                <label class="label bg-slate-900 dark:bg-white shadow dark:shadow-gray-800 cursor-pointer rounded-full flex justify-between items-center p-1 w-14 h-8" for="chk">
+                    <i data-feather="moon" class="h-[18px] w-[18px] text-yellow-500"></i>
+                    <i data-feather="sun" class="h-[18px] w-[18px] text-yellow-500"></i>
+                    <span class="ball bg-white dark:bg-slate-900 rounded-full absolute top-[2px] left-[2px] w-7 h-7"></span>
+                </label>
+            </span>
+        </div>
+        <!-- Switcher -->
+
+        <!-- LTR & RTL Mode Code -->
+        <div class="fixed top-1/3 -right-3 z-50">
+            <a href="" id="switchRtl">
+                <span class="py-1 px-3 relative inline-block rounded-t-md -rotate-90 bg-white dark:bg-slate-900 shadow-md dark:shadow dark:shadow-gray-800 font-semibold rtl:block ltr:hidden" >LTR</span>
+                <span class="py-1 px-3 relative inline-block rounded-t-md -rotate-90 bg-white dark:bg-slate-900 shadow-md dark:shadow dark:shadow-gray-800 font-semibold ltr:block rtl:hidden">RTL</span>
+            </a>
+        </div>
+        <!-- LTR & RTL Mode Code -->
+
+        <!-- JAVASCRIPTS -->
+        <script src="assets/libs/shufflejs/shuffle.min.js"></script>
+        <script src="assets/libs/tobii/js/tobii.min.js"></script>
+        <script src="assets/libs/feather-icons/feather.min.js"></script>
+        <script src="assets/js/plugins.init.js"></script>
+        <script src="assets/js/app.js"></script>
+        <!-- JAVASCRIPTS -->
+    </body>
+</html>
